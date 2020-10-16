@@ -1,0 +1,874 @@
+/* strat navbar */
+.navbar-inverse{
+    background-color: rgba(34, 34, 34, 0);
+    height: 6em;
+    border: 0
+}
+
+.scrolled{
+    background-color:rgba(255,255,255,.98);
+    box-shadow: 0 2px 2px #efefef;
+    -webkit-transition: all ease-in-out 1s;
+    -moz-transition: all ease-in-out 1s;
+    -o-transition: all ease-in-out 1s;
+    transition: all ease-in-out 1s;
+}
+
+.scrolled .navbar-nav>li>a:hover{
+    color: #333
+}
+
+.navbar-header a img{width: 7.2%;margin-top: -13px}
+.navbar-nav>li>a{padding-top: 2.8em}
+.navbar-right{margin-top: -80px}
+.navbar-inverse .navbar-nav>li>a{
+    color:#e67e22;
+    font-size: 1.5em;
+    font-weight: bolder;
+    transition: .5s ease;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover{
+    color:#333
+}
+.navbar-inverse .navbar-nav>li{
+    position: relative;
+    margin: 10px;
+    text-align: center;
+    transition: .5s ease-in-out;
+}
+.navbar-inverse .navbar-nav>li:after{
+    content: "";
+    display: block;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    transition: width .5s ease-in-out;
+    width:0;
+    background-color: #e67e22;
+    text-align: center
+}
+.navbar-inverse .navbar-nav>li:hover:after{
+    width: 100%
+}
+.navbar-inverse .navbar-nav li a.activ{
+    color: #fff;
+    background-color: #e67e22;
+}
+
+/* end navbar */
+
+/* strat bacground hello */
+.hello{
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(../imgs/hero.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+}
+.hello h1{
+    color: #fff;
+    padding-top: 290px;
+    line-height: 2em
+}
+.hello .one {
+    background-color:#e67e22;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 700;
+    border: 2px solid#e67e22;
+    border-radius: 100px;
+    transition: all .7s;
+    font-size: 125%;
+} 
+.hello .tow{
+    background-color: hsla(0, 20%, 92%, 0);
+    border: 3px solid#e67e22;
+    color: #e67e22;
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 700;
+    border: 2px solid#e67e22;
+    border-radius: 100px;
+    transition: all .7s;
+    font-size: 125%;
+    margin-left: 15px
+}
+.hello .tow:hover{
+    background-color: #e67e22;
+    color: #fff
+}
+/* end section hello */
+
+/* strat section fast food */
+.fast-food{
+    padding-bottom: 80px
+}
+.fast-food .get-food h1{
+    padding-top: 4em;
+    font-weight: 600;
+}
+.fast-food .get-food h1:after{
+    content: "";
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2.5px;
+    background-color: #e67e22;
+    width: 4.2em;
+    margin: 50px auto;
+}
+
+.fast-food .get-food p{
+    padding-bottom: 45px;
+    padding-top: 15px
+}
+.order-now{
+    padding-top: 70px;
+}
+.fast-food .fa-calendar-minus-o{width: 1.6em;height: 1.6em;line-height: 1.6em} 
+.fast-food i{
+    transition: .5s ease-in-out;
+    color: #e67e22;
+    border: 2px solid#e67e22;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    line-height: 1.5em;
+    font-size: 30px;
+    margin: 5px
+}
+.fast-food .days:hover i{
+    background-color: #e67e22;
+    color: #fff;
+    transform: rotate(360deg);
+}
+.fast-food .minutes:hover i{
+    background-color: #e67e22;
+    color: #fff;
+    transform: rotate(360deg);
+}
+.fast-food .organic:hover i{
+    background-color: #e67e22;
+    color: #fff;
+    transform: rotate(360deg);
+}
+.fast-food .order:hover i{
+    background-color: #e67e22;
+    color: #fff;
+    transform: rotate(360deg)
+}
+.fast-food .days h2{
+    font-size: 24px ;
+    padding-bottom: 25px
+}
+.fast-food .minutes h2{
+    padding-bottom: 25px;
+    font-size: 24px ;
+}
+.fast-food .organic h2{
+    padding-bottom: 25px;
+    font-size: 24px ;
+}
+.fast-food .order h2{
+    padding-bottom: 25px;
+    font-size: 24px ;  
+}
+.fast-food .order-now p{
+    color: #777;
+    font-size: 20px
+}
+
+/* end section fast food */
+
+/* start section all img */
+.all-img{
+    overflow: hidden
+}
+.all-img .imgs {
+    margin: 0;
+    margin-left: -38px;
+}
+.all-img .imgs li{
+    display: block;
+    width: 25%;
+    float: left;
+    overflow: hidden
+}
+.all-img .imgs img{
+    width: 100%;
+    transition: .5s ease ;
+    height: auto;
+    transform: scale(1.1);
+    transition: all .7s;
+    opacity: .7
+}
+.all-img .imgs img:hover{
+    transform: scale(1);
+    opacity: 1;
+}
+/* end section all img */
+
+
+/*  strat section how-work */
+.all-list{
+    margin-top: 25px;
+}
+.how-work{
+    padding-top: 100px;
+    background-color: rgba(239, 238, 238, 0.39);
+    overflow: hidden
+}
+.how-work h2{
+    padding-bottom: 100px;
+    font-size: 3em;
+    font-weight: 550;
+    text-transform: uppercase;
+    position: relative;
+ font-family: 'MyWebFont', Arial, sans-serif; 
+}
+.how-work h2:after{
+    content: "";
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2.5px;
+    background-color: #e67e22;
+    width: 4.2em;
+    margin: 50px auto;
+}
+.how-work .imag{
+    width: 80%;
+    text-align: right;
+}
+.how-work .imag img{
+    padding-top: 0;
+    width: 70%;
+    margin-bottom: 40px
+}
+.how-work .list-icon{
+    padding-top: 50px;
+    margin-bottom: 20px ;
+    overflow: hidden;
+}
+.how-work .list-icon h5{
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    margin-top: 0;
+    line-height: 60px;
+    text-align: center;
+    color: #e67e22;
+    border: 2px solid#e67e22;
+    border-radius: 50%;
+    font-size: 28px;
+    transition: .4s ease
+}
+.how-work .list-icon h5:hover{
+    color: #fff;
+    background-color: #e67e22;
+    font-size:45px;
+    transform: rotate(360deg);
+}
+.how-work  .list-icon .text-info {
+        width: calc(100% - 80px); 
+}
+/* end section how-work */
+
+/* start these cities */
+.citiese{
+    padding-top: 50px;
+    padding-bottom: 50px
+}
+.citiese .desc{
+    text-transform: uppercase;
+    font-weight: 500
+}
+.citiese .desc:after{
+    content: "";
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2.5px;
+    background-color: #e67e22;
+    width: 4.2em;
+    margin: 50px auto
+}
+
+.citiese .all-citiese{
+    padding-top: 40px;
+}
+.citiese .all-citiese .lisbon img{
+    width: 100%
+}
+.citiese .all-citiese .lisbon i{
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+    margin-top: 0;
+    line-height: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 20px;
+    margin: 5px;
+    transition: .4s ease
+}
+.citiese .all-citiese .lisbon i:hover{
+    transform: rotate(360deg);
+    background-color: #e67e22;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 35px
+}
+.citiese .all-citiese .lisbon .hahaha{
+    margin-right: -50px
+}
+.citiese .all-citiese .lisbon .sspan{
+    color: #e67e22
+}
+.citiese .all-citiese .lisbon h2{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgba(34, 34, 34, 0.73)
+}
+/* end these cities */
+
+/* start section our-customers */
+.our-customers{padding-top: 20px}
+.overlay{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.72),rgba(0,0,0,.7)), url(../imgs/back-customers.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 50% ; 
+    color:  rgba(255, 255, 255, 0.78);
+}
+.our-customers .customers h2{
+    padding-top: 70PX
+}
+.our-customers .customers h2:after{
+    content: "";
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2.5px;
+    background-color: #e67e22;
+    width: 4.2em;
+    margin: 50px auto;
+} 
+.our-customers .customers span{
+    font-size: 60px;
+}
+.our-customers .customers .media-left img{
+    width: 70px;
+    border-radius: ;
+    padding-bottom: 80px
+}
+
+.our-customers .customers .media-body h4{
+    line-height: 60px;
+    margin-left: 10px; 
+}
+/* end section our-customers */
+
+/* start section eiting healthy */
+.eiting-healthy{
+    background-color: rgba(119, 119, 119, 0.11);
+    min-height: 600px
+}
+.eiting-healthy h2{
+    text-transform: uppercase;
+    padding-top: 60px
+}
+.eiting-healthy h2:after{
+    content: "";
+    display: block;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 2.5px;
+    background-color: #e67e22;
+    width: 4.2em;
+    margin: 50px auto;
+}
+.eiting-healthy .all-order{
+    background: #fff;
+    padding-bottom: 20px;
+    height: 24em;
+    width: 20em;
+}
+.eiting-healthy .all-order h3{
+    margin-left: 10px;
+    padding-top: 15px
+}
+.eiting-healthy .all-order h4{
+    font-size: 35px;
+    margin-left: 10px;
+    color: #e67e22;
+    margin-bottom: 14px
+}
+.eiting-healthy .all-order h4 span{
+   color:  rgba(230, 126, 34, 0.63);
+    font-size: 25px
+}
+.eiting-healthy .all-order h5{
+    color: rgba(0, 0, 0, 0.48);
+    margin-left: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+    padding-bottom: 10px;
+}
+.eiting-healthy .all-order .delivery{
+     border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+    padding-bottom: 10px;
+    color: rgba(0, 0, 0, 0.48);
+    margin-left: 10px;
+}
+.eiting-healthy .all-order .delivery i{
+    color: #e67e22;
+    margin-bottom: 10px;
+    margin-right: 10px
+}
+.eiting-healthy .all-order .activ{
+    background-color: #ff9b51;
+    color: #fff;
+    margin-left: 5em;
+    margin-top: 1.5em;
+    border-radius: 100px
+}
+.eiting-healthy .all-order .btn1{
+    background-color: #fff;
+    color: #ff9b51;
+    border: 1px solid#ff9b51;
+    border-radius: 100px;
+    transition: .7s;
+    display: block;
+    margin: 1.5em auto;
+}
+
+.eiting-healthy .all-order .btn1:hover{
+    background-color: #ff9b51;
+    color: #fff;
+
+}
+/* end section eiting healthy */
+    
+/*start section hear from you*/
+.hear-from{
+    padding-bottom: 50px;
+    padding-top: 70px
+}
+.hear-from h2{
+    text-transform: uppercase;
+}
+.hear-from h2:after{
+    content: "";
+    display: block;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 2.5px;
+    background-color: #e67e22;
+    width: 4.2em;
+    margin: 50px auto;
+}
+.hear-from .contact .form-control{
+    margin: 3px;
+    border: 0;
+    box-shadow: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.100);
+}
+.hear-from .contact .area{
+    height: 8em
+}
+.hear-from .contact .btn{
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #ff9b51;
+    color: #fff;
+    border-radius: 20px;
+}
+/*  end section hear from you*/
+
+/* start section footer */
+.footer div{
+    background-color: rgba(17, 17, 17, 0.83);
+    color: rgba(255, 255, 255, 0.91);
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden
+}
+.footer div a{color: #fff}
+.footer div i{
+    color: #e67e22
+}
+/* end section footer */
+
+/* start scroll to top */
+#scroll-top {
+    width: 60px;
+    height: 60px;
+    color: rgba(17, 17, 17, 0.83);
+    background-color:#ff9b51;
+    text-align: center;
+    position: fixed;
+    right: 50px;
+    bottom: 20px;
+    z-index: 9999;
+    display: none;
+    cursor: pointer;
+    border-radius: 50%;
+    line-height: 60px;
+    transition: ease-in-out .5s all
+}
+#scroll-top:hover{
+ background-color: #fff;
+    color: #ff9b51;
+    border: 2px solid#ff9b51
+}
+/* end scrol to top */
+
+/*loading 
+.loading{
+    background: #ff9b51;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999999
+}
+
+.sk-folding-cube {
+  margin: 300px auto;
+  width: 60px;
+  height: 60px;
+    margin-top: 50px
+  position: relative;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+
+.sk-folding-cube .sk-cube {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1); 
+}
+.sk-folding-cube .sk-cube:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+          animation: sk-foldCubeAngle 2.4s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+.sk-folding-cube .sk-cube2 {
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+          transform: scale(1.1) rotateZ(90deg);
+}
+.sk-folding-cube .sk-cube3 {
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+          transform: scale(1.1) rotateZ(180deg);
+}
+.sk-folding-cube .sk-cube4 {
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+          transform: scale(1.1) rotateZ(270deg);
+}
+.sk-folding-cube .sk-cube2:before {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.sk-folding-cube .sk-cube3:before {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s; 
+}
+.sk-folding-cube .sk-cube4:before {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+@-webkit-keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  } 
+}
+
+@keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  }
+}
+ loading */
+
+/* start activ class */
+.active{
+    color: #e67e22
+}
+/* End activ class */
+/*--------------------------------- start media --------------------------------------------- */
+/* extra smol media */
+@media(max-width:470px){
+    
+    /* start how-work */
+        .how-work .imag img{
+        margin-left: 8em
+    }
+    /* end how-work */
+    
+    /* start these cities */
+    .citiese .all-citiese .lisbon{text-align: center}
+    .citiese .all-citiese .lisbon<i{
+        margin-left: 30px
+    }
+    /* end these cities */
+    
+    /* strat bacground hello */
+    .hello h1{
+        text-align: center;
+        padding-top: 90px
+    }
+    .hello .one{
+        margin: 15px;
+        
+    }
+    .hello .tow{
+        margin: 5px 10px
+    }
+    /* end bacground hello */
+    
+    /* strat section fast food */
+    .fast-food .get-food h1{
+        font-size: 2em;
+        line-height: 35px;
+        padding-top: 2em
+    }
+    .fast-food .get-food span{
+        margin: 50px auto;
+        margin-top: 17px;
+        margin-left: 5em
+    }
+    /* end section fast food */
+    
+    /*  strat section how-work */
+    .how-work h2{font-size: 2em}
+    /*  end section how-work */
+    
+    /* start section our-customers */
+    .media .lead{
+        text-align: center
+    }
+    .our-customers .customers .media-left img{
+        margin-left: 11.8em
+    }
+    /* end section our-customers */
+    
+    /* start section eiting healthy */
+    .eiting-healthy{
+        min-height: 97em
+    }
+    .eiting-healthy .all-order{
+    margin: 50px auto;
+    margin-top: -30px;
+    }
+
+    /* end section eiting healthy */
+}
+
+
+
+
+/********************************************* smol media *************************************************/
+
+@media( min-width:470px) and (max-width:767px) {
+    
+    /* strat bacground hello */
+    .hello h1{
+        text-align: center;
+        padding-top: 90px
+    }
+    .hello .one{
+    margin: 50px auto;
+    margin-left: 3em;
+    }
+    .hello .tow{
+        margin: 5px 10px
+    }
+    /* end bacground hello */
+    
+    /* strat section fast food */
+    .fast-food .get-food h1{
+        font-size: 2em
+    }
+    .fast-food .get-food span{
+        margin-left: 8em;
+        margin-top: 16px;
+    }
+    .fast-food .days{padding-bottom: 20px}
+    .fast-food .minutes{padding-bottom: 20px}
+    .fast-food .organic{padding-bottom: 20px}
+    .fast-food .order{padding-bottom: 20px}
+    /* end section fast food */
+    
+    /*  strat section how-work */
+    .how-work h2{font-size: 2em;padding-bottom: 0}
+    .how-work .imag img{
+        display: none
+    }
+    
+    /*  end section how-work */
+    
+    /* start section our-customers */
+    .media .lead{
+        text-align: center
+    }
+    .our-customers .customers .media-left img{
+        margin-left: 12em
+    }
+    /* end section our-customers */
+    
+    /* start section eiting healthy */
+    .eiting-healthy{
+        min-height: 97em
+    }
+    .eiting-healthy .all-order{
+    margin: 50px auto;
+    margin-top: -30px;
+    }
+
+    /* end section eiting healthy */
+    
+    /* start these cities */
+    .citiese .all-citiese .lisbon{text-align: center}
+    /* end these cities */
+}
+
+
+
+/********** start smol media**************/
+
+@media(max-width:767px){
+    /* start navbar */
+    .navbar-inverse .navbar-brand{margin-bottom: -32px}
+    .navbar-inverse{background-color:rgba(255,255,255,.98); }
+    .navbar-right{
+        background-color:rgba(239, 170, 109, 0.98);
+        color: #333;
+        margin-top: -3px
+    }
+    .navbar-inverse .navbar-toggle .icon-bar{    background-color: #fd7700; }
+    .navbar-inverse .navbar-nav>li>a{
+        color: aliceblue
+    }
+    .navbar-header a img{
+        width: 10%;
+        margin-top: -63px;
+    }
+    .navbar-inverse .navbar-nav>li{}
+    .navbar-inverse .navbar-nav>li>a{padding: 12px}
+    
+    /* end navbar */
+}
+
+
+/************end smol media************/
+
+/* smol media */
+@media(min-width:768px) and (max-width:991px){
+    /* start navbar */
+    .navbar-inverse{border: 0}
+    .navbar-right{margin-top: -90px}
+    .navbar-header a img{width: 12%;margin-top: -13px}
+    /* end navbar */
+    
+    /* start bacground hello */
+    .hello h1{
+        padding-top: 200px
+    }
+    /* end bacground hello */
+    
+    /* start section eiting healthy */
+    .eiting-healthy .all-order{
+        margin-bottom: 10px
+    }
+    /* end section eiting healthy */
+    
+    /*  start section how-work */
+    .how-work .imag img{
+        width: 55%;
+        margin-left: 9em
+    }
+    /*  end section how-work */
+}
+
+
+@media(min-width:991px) and (max-width:1199px){
+    /* start navbar */
+    .navbar-inverse{border: 0}
+    .navbar-right{margin-top: -90px}
+    .navbar-header a img{width: 9%;margin-top: -12px}
+    /* end navbar */
+    
+    /* start bacground hello */
+    .hello h1{
+        padding-top: 200px
+    }
+    /* end bacground hello */
+    
+    /* start section eiting healthy */
+    .eiting-healthy .all-order{
+        margin-bottom: 10px
+    }
+    /* end section eiting healthy */
+
+
+}
+
+
+/******** lg media *******************/
+
+
+
+/*--------------------------------- end media --------------------------------------------- */
